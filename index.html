@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Josefin+Sans">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+</head>
+<body>
+  <div class="header">
+    <header>
+      <h1>To Do</h1>
+      <div class="theme-toggle">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+      </div>
+      <div class="row">
+        <input type="text" id="input-box" placeholder="Todo .eg. Lecture at noon.">
+      </div>
+    </header>
+  </div>
+  
+  <div class="container">
+    <div class="todo-app">
+      <ul id="list-container" draggable="true">
+        <li class="checked" >Task1</li>
+
+        <li >Task2</li>
+        
+      </ul>
+     
+      <div class="filter-buttons">
+        <p id="items-left">0 items left</p>
+        <div class="rows">
+        <button id="all-btn">All</button>
+        <button id="active-btn">Active</button>
+        <button id="completed-btn">Completed</button>
+      </div>
+        <button id="clear-completed-btn">Clear Completed</button>
+      </div>
+    </div>
+    <p id="reorder-info">Drag and drop to reorder list</p>
+  </div>
+  <script src="script.js"></script>
+  
+</body>
+</html>
